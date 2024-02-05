@@ -1,0 +1,28 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+
+<http://njh.me/>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <http://njh.me/#me> ;
+  foaf:primaryTopic <http://njh.me/#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<http://njh.me/#me>
+  a foaf:Person ;
+  foaf:name "Bart Simpson" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Bart" ;
+  foaf:family_name "Simpson" ;
+  foaf:mbox_sha1sum "2fb57d1f58acac368a0e69e5944d5a0d6f68a515" ;
+  foaf:phone <tel:12345> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Lisa" ;
+    foaf:mbox_sha1sum "e9d1635edc66c116d3fcd8c83fa42d8e4471675e"
+  ],
+  [
+    a foaf:Person ;
+    foaf:name "Bob" ;
+    foaf:mbox_sha1sum "e9d1632edc66c116d3fcd8c83fa42d8e4471675e"
+  ] .
