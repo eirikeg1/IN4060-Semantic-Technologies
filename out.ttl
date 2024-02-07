@@ -1,0 +1,22 @@
+@prefix fam:   <http://www.ifi.uio.no/IN3060/family#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sim:   <http://www.ifi.uio.no/IN3060/simpsons#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+sim:Herb  a            foaf:Person ;
+        fam:hasFather  []  .
+
+sim:Maggie  a      fam:Minor , fam:Infant , foaf:Person ;
+        foaf:age   "1"^^xsd:int ;
+        foaf:name  "Maggie Simpson" .
+
+sim:Mona  a            foaf:Person ;
+        fam:hasSpouse  sim:Abraham ;
+        foaf:age       "70"^^xsd:int ;
+        foaf:name      "Mona Simpson" .
+
+sim:Abraham  a         fam:Old , foaf:Person ;
+        fam:hasSpouse  sim:Mona ;
+        foaf:age       "78"^^xsd:int ;
+        foaf:name      "Abraham Simpson" .

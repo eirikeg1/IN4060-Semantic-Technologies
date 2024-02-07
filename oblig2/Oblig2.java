@@ -1,5 +1,3 @@
-package com.example;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -13,7 +11,7 @@ import org.apache.jena.rdf.model.*;
 import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.XSD;
 
-public class Main {
+public class Oblig2 {
 
     static Model model = ModelFactory.createDefaultModel();
 
@@ -41,7 +39,7 @@ public class Main {
     public static void main(String[] args) {
 
         if (args.length != 2) {
-            System.out.println("Usage: java Main <input_file> <output_file>");
+            System.out.println("Usage: java Oblig2 <input_file> <output_file>");
             System.exit(1);
         }
 
