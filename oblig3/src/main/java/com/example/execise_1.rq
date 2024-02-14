@@ -1,0 +1,16 @@
+PREFIX fo: <http://www.w3.org/1999/XSL/Format#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fam: <http://www.ifi.uio.no/IN3060/family#>
+PREFIX sim: <http://www.ifi.uio.no/IN3060/simpsons#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?person ?name
+WHERE {
+  ?person rdf:type foaf:Person
+	OPTIONAL {
+		?person foaf:name ?name
+  }
+}
+ORDER BY STR(?person)
